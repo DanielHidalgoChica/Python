@@ -1,16 +1,27 @@
-
+intentos_res = 10
 guess = 0
 import random
 
-num = int(random.randint(10, 20))
-
+num = int(random.randint(1, 100))
 print(num)
+guess = int(input("Adivina el número "))
 
-while guess != num:
-    guess = int(input("Adivina el número "))
-    if guess<num:
-        print("El número es mayor")
-    else:
-        print("El número es menor")
+if guess==num:
+    print("Has acertado el número a la primera")
+else:
+    while guess != num:
+        intentos_res = intentos_res - 1
+        if intentos_res==0:
+            print("Lo siento, no lo has conseguido")
+        else:
+            if guess<num:
+                print("El número es mayor")
+                print("Te quedan ", intentos_res, "intentos")
+                guess = int(input("Adivina el número "))
+            else:
+                print("El número es menor")
+                print("Te quedan ", intentos_res, "intentos")
+                guess = int(input("Adivina el número "))
+    print("Has acertado el número en ", 10-intentos_res+1, " intentos")
 
-print("Has acertado el número!")
+
