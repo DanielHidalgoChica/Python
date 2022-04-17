@@ -1,6 +1,9 @@
-num = -1
-sum = 0
-contador = 0 
+#Algoritmo que pida números hasta que se introduzca un cero. Debe imprimir la
+#suma y la media de todos los números introducidos.
+
+num = int(-1)
+sum = int(0)
+contador = int(0) 
 
 print("Introduzca los números de los cuales se calculará la suma y la media una vez se intruzca un 0")
 
