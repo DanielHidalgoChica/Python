@@ -1,4 +1,4 @@
-num = 1
+num = -1
 sum = 0
 contador = 0 
 
