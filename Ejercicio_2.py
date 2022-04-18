@@ -9,16 +9,16 @@
 
 intentos_res = 10
 guess = 0
-import random
 
+import random
 num = int(random.randint(1, 100))
+
 guess = int(input("Adivina el número "))
 
 if guess==num:
     print("Has acertado el número a la primera")
 else:
     while (guess != num):
-
         intentos_res = intentos_res - 1
         if intentos_res == 0:
             break
