@@ -11,7 +11,7 @@ while flag == True:
         flag = False
     except: 
         print("Introduzca un valor válido")
-        flag = True
+        
 
 flag = True
 
@@ -21,7 +21,7 @@ while flag == True:
         flag = False
     except: 
         print("Introduzca un valor válido")
-        flag = True
+        
 
 
 
