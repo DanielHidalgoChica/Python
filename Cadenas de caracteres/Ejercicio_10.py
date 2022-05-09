@@ -16,3 +16,4 @@ if (cad_in == cad):
 else:
     print("No es un palíndromo")
 
+

@@ -6,7 +6,7 @@ string = string_or.upper()
 car_or = input("Introduzca un caracter ")
 car = car_or.upper()
 
-if ((ord(car)) >= 65 and (ord(car) <= 90)):
+if (ord(car) >= 65 and (ord(car) <= 90)):
     print("'", car_or, "'", "es un caracter.")
 
 print("El caracter aparece ", string.count(car), " veces.")
