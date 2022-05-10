@@ -17,6 +17,17 @@ def calcularMaxMin(muestra):
     
     return [max, min]
 
+
+MaxMin = []
+
+n_day = 0 
+
+n_day = int(input("¿Cuántos números va a introducir? "))
+
 print("Introduzca sus números: ")
 
-print("El máximo y el mínimo son: " calcularMaxMin())
+for i in range(n_day):
+    MaxMin.append(int(input("")))
+
+print("El máximo y el mínimo son: ", calcularMaxMin(MaxMin))
+
